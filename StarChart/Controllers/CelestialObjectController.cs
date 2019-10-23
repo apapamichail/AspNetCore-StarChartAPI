@@ -58,7 +58,7 @@ namespace StarChart.Controllers
             {
                 throw new ArgumentNullException(nameof(name));
             }
-            return celestialObjectRepository.CelestialObjects.Where(x => x.name.Equals(name)).FirstOrDefault();
+            return celestialObjectRepository.CelestialObjects.Where(x => x.Name.Equals(name)).FirstOrDefault();
 
         }
 
